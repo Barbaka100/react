@@ -1,8 +1,12 @@
-const calculate = (a, b, c, d, e) => {
-    return a + b
+function calculate(...args){
+    let sum = 0
+    for(const num of args){
+        sum += num
+    }
+    return sum
 }
 
-console.log(calculate(5, 7))
+console.log(calculate(5, 7, 8, 15))
 
 
 // const user = {
@@ -21,28 +25,28 @@ console.log(calculate(5, 7))
 
 
 
-const user1 = {
-    name: 'alex',
-    lasName: 'barbakadze',
-    age: 39,
-    address: {
-        country: 'georgia'
-    }
-}
+// const user1 = {
+//     name: 'alex',
+//     lasName: 'barbakadze',
+//     age: 39,
+//     address: {
+//         country: 'georgia'
+//     }
+// }
 
 
-const user2 = {
-    ...user1,
-    address: {
-        ...user1.address
-    }
+// const user2 = {
+//     ...user1,
+//     address: {
+//         ...user1.address
+//     }
      
-}
+// }
 
 
-user2.name = 'david'
-user2.address = 'Italy'
+// user2.name = 'david'
+// user2.address = 'Italy'
 
-console.log(user2.name, user1.lasName)
+// console.log(user2.name, user1.lasName)
 
-console.log(user2.address, user1.age)
+// console.log(user2.address, user1.age)
