@@ -1,13 +1,13 @@
 
                        // #2
 
-const text = (words) => {
+// const text = (words) => {
 
 
-    return words.map((word) => word.split(" ").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "))
-}
+//     return words.map((word) => word.split(" ").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "))
+// }
 
-console.log(text(["lorem ipsum dolor sit amet, consectetur adipiscing elit."]))
+// console.log(text(["lorem ipsum dolor sit amet, consectetur adipiscing elit."]))
 
 
                        // #3
