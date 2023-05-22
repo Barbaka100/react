@@ -1,52 +1,23 @@
-function calculate(...args){
-    let sum = 0
-    for(const num of args){
-        sum += num
-    }
-    return sum
+
+                       // #2
+
+const text = (words) => {
+
+
+    return words.map((word) => word.split(" ").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "))
 }
 
-console.log(calculate(5, 7, 8, 15))
+console.log(text(["lorem ipsum dolor sit amet, consectetur adipiscing elit."]))
 
 
-// const user = {
-//     banks: 'BOG',
-//     adress: 'chavchavadze street',
-//     sity: 'rustavi',
-// }
+                       // #3
 
 
-
-// const {sity, adress, banks, appartments} = user
-
-// console.log(sity, appartments)
-
-
-
+// const users = [
+//     {name: 'lasha', age: 30}, 
+//     {name: 'saba', age: 20},
+// ]
+// users.sort((a, b) => a - b)
 
 
-// const user1 = {
-//     name: 'alex',
-//     lasName: 'barbakadze',
-//     age: 39,
-//     address: {
-//         country: 'georgia'
-//     }
-// }
-
-
-// const user2 = {
-//     ...user1,
-//     address: {
-//         ...user1.address
-//     }
-     
-// }
-
-
-// user2.name = 'david'
-// user2.address = 'Italy'
-
-// console.log(user2.name, user1.lasName)
-
-// console.log(user2.address, user1.age)
+// console.log(users)
