@@ -1,23 +1,15 @@
+// const container = document.querySelector('.container')
 
-                       // #2
-
-// const text = (words) => {
-
-
-//     return words.map((word) => word.split(" ").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "))
-// }
-
-// console.log(text(["lorem ipsum dolor sit amet, consectetur adipiscing elit."]))
+// const member = container.querySelectorAll('p')
 
 
-                       // #3
+// console.log(member)
 
 
-// const users = [
-//     {name: 'lasha', age: 30}, 
-//     {name: 'saba', age: 20},
-// ]
-// users.sort((a, b) => a - b)
+const root = document.body
+const div = document.createElement('div')
+const buttom = document.createElement('button')
 
+div.append(buttom)
 
-// console.log(users)
+console.log(div)
